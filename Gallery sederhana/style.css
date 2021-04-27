@@ -1,0 +1,68 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #24252A;
+	text-decoration: none;
+}
+
+.header-container{
+	display: flex;
+	background-color: #161616;
+	padding: 30px 10%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.judul{
+	font-size: 25px;
+	color: white;
+}
+
+li{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	list-style: none;
+	cursor: pointer;
+}
+
+.menu-pic li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.menu-pic li:hover{
+	color: purple;
+}
+
+.picture-container{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.pic{
+	left: 55px;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	float: left;
+	background-size: cover;
+	padding: 20px;
+	margin: 10px;
+	background-position: center;
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.8);
+}
+
+#pic1{
+	background-image: url("img/pic1.jpg");
+}
+#pic2{
+	background-image: url("img/pic2.jpg");
+}
+#pic3{
+	background-image: url("img/pic3.jpeg");
+}
+#pic4{
+	background-image: url("img/pic4.jpeg");
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Belajar Javascript</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="header-container">
+			<div class="judul">Vero's Gallery</div>
+			<ul class="menu-pic">
+				<li id="btn1">Picture 1</li>
+				<li id="btn2">Picture 2</li>
+				<li id="btn3">Picture 3</li>
+				<li id="btn4">Picture 4</li>
+			</ul>
+		</div>
+		
+		<div class="picture-container">
+			<div class="pic" id="pic1"></div>
+			<div class="pic" id="pic2"></div>
+			<div class="pic" id="pic3"></div>
+			<div class="pic" id="pic4"></div>
+		</div>
+		
+		<script src="js/jquery.js"></script>
+		<script>
+			$(function(){
+				$('#btn1').on('click', function(){
+					$('#pic1').slideToggle(200);
+				});
+				$('#btn2').on('click', function(){
+					$('#pic2').slideToggle(200);
+				});
+				$('#btn3').on('click', function(){
+					$('#pic3').slideToggle(200);
+				});
+				$('#btn4').on('click', function(){
+					$('#pic4').slideToggle(200);
+				});
+			});
+		</script>
+
+	</body>
+</html>
