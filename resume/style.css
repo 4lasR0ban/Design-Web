@@ -1,0 +1,159 @@
+@font-face{
+	font-family: 'wkwkwk';
+	src: url('font/miso/miso-bold.TTF')
+}
+
+body{
+	margin: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+#icon-container-right{
+	position: relative;
+	top: 8px;
+	right: 50px;
+	float: right;
+}
+
+.icon{
+	position: relative;
+	width: 44px;
+	height: 44px;
+	margin-right: 8px;
+	display: inline-block;
+}
+
+header{
+	position: relative;
+	width: 1400px;
+	height: 60px;
+	background-color: #505050;
+}
+
+.header-container{
+	position: relative;
+	width: 1200px;
+	height: 600px;
+	background-color: #505050;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main-container{
+	background-image: url('img/background.png');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.main-container-1{
+	position: relative;
+	width: 1400px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+}
+
+.main-container-trans{
+	position: relative;
+	left: 450px;
+	top: 100px;
+	height: 400px;
+    width: 500px;
+    background: rgba(80, 80, 80, 0.5);
+    border: white 2px solid;
+	border-radius: 20px;
+}
+
+#title-main{
+	top: 130px;
+	left: 0px;
+	margin: 50px;
+	text-align: center;
+	text-shadow: 2px 2px 5px white;
+}
+
+#title-vero{
+	top: 12px;
+	left: 75px;
+	float: left;
+}
+
+.title{
+	position: relative;
+	font-family: wkwkwk;
+	color: #ffffff;
+	left: 15px;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+footer{
+	position: relative;
+	width: 100%;
+	background-color: #505050;
+}
+
+#footer-container{
+	position: relative;
+	width: 1325px;
+	height: 300px;
+	margin-left: 75px;
+	margin-right: 25px;
+	overflow: auto;
+	background-color: #505050;
+}
+
+.footer-column{
+	position: relative;
+	width: 360px;
+	margin-right: 60px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	float: left;
+}
+
+.avatar{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.text{
+	position: relative;
+	font-family: arial;
+	font-size: 14;
+	color: #cccccc;
+	top: 15px;
+	left: 15px;
+	right: 10px;
+	line-height: 20px;
+	margin-bottom: 18px;
+}
+
+.quote{
+	position: relative;
+	width: 360px;
+	height: 195px;
+	margin-right: 20px;
+	margin-left: 20px;
+	float: none;
+	top: 0px;
+	left: 60px;
+}
+
+.footer-column-last{
+	margin-right: 0px;
+}
+
+.icon-footer-right{
+	position: relative;
+	top: 20px;
+	left: 15px;
+}
