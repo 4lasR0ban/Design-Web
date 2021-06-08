@@ -1,0 +1,175 @@
+@font-face{
+	font-family: "wkwkwk";
+	src: url("font/miso/miso-bold.TTF")
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "wkwkwk";
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #505050;
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+.sidebar header {
+  font-size: 50px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #505050;
+  user-select: none;
+}
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 35px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+
+ul li:hover a{
+  padding-left: 50px;
+}
+
+.sidebar ul a i{
+  margin-right: 16px;
+}
+
+#check{
+  display: none;
+}
+
+label #btn,label #cancel{
+  position: absolute;
+  background: #505050;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.8);
+}
+
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: white;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+
+#check:checked ~ section{
+  margin-left: 250px;
+}
+
+footer{
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	user-select: none;
+}
+
+section{
+  background: url("img/brick.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+
+.card{
+	position: relative;
+	top: 50%; left: 50%;
+	height: 300px; width: 200px;
+	transform: translate(-50%, -50%);
+	transform-style: preserve-3d;
+	perspective: 600px;
+	transition: .5s;
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.8);
+	z-index: 1;
+}
+
+.card:hover .movie-front{
+	transform: rotateY(-180deg);
+}
+
+.card:hover .movie-back{
+	transform: rotateY(0deg);
+}
+
+.movie-front{
+	height: 100%; width: 100%;
+	background-image: url("img/star wars.png");
+	background-position: 50% 50%;
+	background-size: cover;
+	position: relative;
+	top: 0; left: 0;
+	background-color: #505050;
+	backface-visibility: hidden;
+	transform: rotateY(0deg);
+	transition: .5s;
+}
+
+.movie-back{
+	height: 100%; width: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	background-color: #505050;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	transition: .5s; color: white;
+	text-align: center;
+}
+
+.movie-back h2{
+	margin: 50% auto 35% auto;
+	font-size: 75px;
+}
+
+.movie-back h2 span{
+	font-size: 30px;
+}
+
+
